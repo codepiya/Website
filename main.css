@@ -1,0 +1,311 @@
+body {
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+}
+
+#navigation {
+    background-color: rgb(250, 245, 245);
+    font-size: 125%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky; /* Keep the navigation fixed at the top */
+    top: 0;
+    z-index: 1000; /* Ensure it stays above other content */
+    border-radius: 0px;
+}
+
+.navigation {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#navigation li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.shopping-cart {
+    margin-left: auto; /* Push the cart to the right */
+    margin-right: 15px; /* Space from the right edge */
+}
+
+#cart img {
+    width: 30px; /* Set icon size */
+    height: 30px; /* Set icon size */
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for readability */
+    border-radius: 8px; /* Rounded corners */
+}
+
+#about {
+    font-size: 125%;
+    padding: 250px;
+    background-image: url('images/beautiful-woman-getting-her-hair-cut-home-by-hairdresser.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+#asha{
+    font-size:50px;
+    color: white;
+    font-family: fantasy;
+}
+
+#sub-asha{
+    font-size: 25px;
+    color: white;
+    font-family: cursive
+}
+
+
+#service{
+    padding: 15px;
+    background-color: rgb(15, 187, 21);
+    color: rgb(252, 255, 253);
+}
+
+#color{
+    color: gray;
+}
+
+#all_services{
+    font-size: 125%;
+    padding-left: 35px; /* Left padding */
+}
+
+.content-container {
+    display: flex;
+    align-items: center; /* Aligns text and image vertically */
+    gap: 70px; /* Space between text and image */
+}
+
+.text-content {
+    flex: 1; /* Takes remaining space */
+}
+
+
+.image-container img {
+    max-width: 100%; /* Keeps the image responsive */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.05); /* Slight zoom-in on hover */
+    filter: brightness(1.1); /* Increase brightness on hover */
+}
+
+#contact {
+    font-size: 125%;
+    padding: 200-x;
+}
+
+a {
+    color: grey;
+}
+
+#services{
+    padding: 40px 0; /*Adds vertical padding above and below the section*/
+    background-color: #f7f8fa;/*Light grey background to distinguish this section from others*/
+    display: flex;/*alins items in a row*/
+    gap: 20px;/* space btw each sevice card*/
+    justify-content: center;/*center the cards horizontally within the section*/
+}
+
+.service-card{
+    background-color: #ffffff;/*white bg for each card*/
+    border-radius: 8px;/*round the corners of the card for a softer look*/
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);/*adds a subtle shadow for a 3D effect*/
+    overflow: hidden;/*Ensures content stays within the rounded corners*/
+    text-align: center;/*centers text content horizontally*/
+    width: 280px;
+    transition: transform 0.3s ease;/*smooth transition effect for transform changes*/
+}
+
+.service-card .service-link{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.service-card .service-link:hover{
+    color: #007bff;
+    cursor: pointer;
+}
+
+.schedule{
+    background-color: rgb(17, 218, 17);
+}
+
+.schedule:hover{
+    cursor: pointer;
+    background-color:darkgreen;
+}
+
+.service-card:hover{
+    transform: translateY(-10px);/*Moves the card slightly upward on hover for an interactive feel*/
+}
+
+.service-image{
+    width: 120%; 
+    height: 300px;
+    object-fit: cover;/*ensures the image covers the entire area, cropping if necessary*/
+    display: block;/* removes any extra space below the image*/
+}
+
+.service-title{
+    font-size: 18px;
+    font-weight: bold;
+    color: #1ba41b;
+    margin: 16px 0 8px;
+    font-family:Arial,sens-serif;
+}
+
+.service-description{
+    font-size: 14px;
+    color: #777;
+    padding: 0 15px 20px;
+    font-family: 'Gill Sans','Gill Sans MT','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial,sans-serif;
+}
+
+body{
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.contact-container {
+    display: flex; /* Aligns the contact form and info side by side */
+    gap: 40px; /* Space between form and info sections */
+    max-width: 1200px; /* Restrict maximum width */
+    margin: 40px auto; /* Center the container */
+    padding: 40px; /* Add internal spacing */
+    background: #ffffff; /* White background for the section */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.contact-form {
+    flex: 2; /* Takes more space compared to the info section */
+}
+
+.contact-header {
+    color: #1ba41b; /* Green header color */
+    font-size: 20px; /* Larger font size */
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.contact-form h1 {
+    margin-top: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin-top: 15px;
+    display: block;
+}
+
+.contact-form span {
+    color: red; /* Indicates required fields */
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%; /* Full width within the container */
+    padding: 15px;
+    margin-top: 5px;
+    border: 2px solid #ccc; /* Subtle border */
+    border-radius: 5px; /* Rounded input fields */
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    resize: vertical; /* Allow vertical resizing only */
+    height: 120px; /* Adjust default height */
+}
+
+.checkbox-container {
+    display: flex; /* Align items in a row */
+    align-items: center; /* Vertically align the checkbox and text */
+    margin: 15px 0; /* Add some spacing around the checkbox */
+    font-size: 14px; /* Set a consistent font size */
+    color: red; /* Ensure the text matches the intended design */
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 10px; /* Add space between the checkbox and the text */
+    width: 16px; /* Adjust the size of the checkbox */
+    height: 16px;
+}
+
+.checkbox-text {
+    line-height: 1.2; /* Ensure proper spacing for multiline text */
+}
+
+.submit-button {
+    padding: 12px 20px;
+    background-color: #1ba41b; /* Bright green */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #148c14; /* Darker green on hover */
+}
+
+.contact-info {
+    flex: 1; /* Takes less space compared to the form */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light gray background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.contact-info h3 {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    color: #555; /* Slightly dimmed text */
+}
+
+.contact-info a {
+    color: #1ba41b; /* Link color matching the theme */
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline; /* Underline on hover for links */
+}

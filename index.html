@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon Services</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="navigation">
+        <ul class="navigation">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="shopping-cart">
+            <a href="#" id="cart"><img src="images/shopping-cart.png" alt="shopping cart"></a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 id="asha">ASHA</h2>
+        <p id="sub-asha">Pamper yourself anytime and anywhere.</p>
+        <br>
+        <a href="#services" id="service">View Services</a>
+    </section>
+
+    <section id="all_services" style="padding: 35px;">
+        <div class="content-container">
+            <div class="text-content">
+                <p id="service_head" style="font-weight: bold; font-size: medium; font-family:cursive; color: rgb(27, 164, 27);">YOUR BEAUTY, OUR PASSION.</p>
+                <h3 style="font-size: 45px;">Transforming looks with expertise</h3>
+                <p style="color: grey; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align:justify ; font-size:20px;">Asha offers an exquisite range of online beauty services in Srīnagar, ensuring you look and feel your best. From hair styling to full body treatments, our expert team provides personalized makeovers and nail care, catering to your unique beauty needs. Experience the convenience of booking top-notch beauty services from the comfort of your home, and let us elevate your beauty routine to new heights.</p>
+                <br>
+                <a href="#contact" id="color" style="font-size: 17px;">Get in touch</a>
+            </div>
+            <div class="image-container">
+            <img style="width: 400px; height: 550px;" src="images/asthetic.jpg" alt="image">
+            </div>
+        </div>
+    </section>
+
+    <!-- this will be our service section -->
+    <section>
+        <p style="color: rgb(27, 164, 27); font-size: small; font-weight: bold;">BEAUTY AT YOUR FINGERPRINTS</p>
+        <h2>Indulge in exquisite treatments today!</h2>
+        <section id="services" style="display: flex; gap: 20px; justify-content: center;">
+            <div class="service-card">
+                <a href="hair.html" class="service-link"><img src="images/img_F_cutting(HT).jpg" alt="Hair"  class="service-image">
+                    <h4 class="service-title">Hair treatment ></h4>
+                    <p class="service-description">Revitalize your hair with our expert treatments.</p></a>
+            </div> 
+
+            <div class="service-card">
+                <a href="face.html" class="service-link"><img src="images/pexels-jonathanborba-19641836(FT).jpg" alt="Face"  class="service-image">
+                    <h4 class="service-title">Facial treatments ></h4>
+                    <p class="service-description">Achieve radiant skin with our tailored facial treatments.</p>
+                </a>
+            </div>
+
+            <div class="service-card">
+                <a href="nail.html" class="service-link"><img src="images/Nails.webp" alt="Nail"  class="service-image">
+                    <h4 class="service-title">Nail art ></h4>
+                    <p class="service-description">Express your style with our creative nail art designs.</p>
+                </a>
+                </div>
+
+        </section>
+
+        <div class="contact-container">
+            <!-- Contact Form Section -->
+            <div class="contact-form">
+                <h3 class="contact-header">GET IN TOUCH</h3>
+                <h1>We're here to assist you!</h1>
+                <form>
+                    <label for="name">Name <span>*</span></label>
+                    <input type="text" id="name" name="name" placeholder="Jane Smith" required>
+    
+                    <label for="email">Email address <span>*</span></label>
+                    <input type="email" id="email" name="email" placeholder="email@website.com" required>
+    
+                    <label for="phone">Phone number <span>*</span></label>
+                    <input type="tel" id="phone" name="phone" placeholder="555-555-5555" required>
+    
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Write your message here"></textarea>
+    
+                    <label class="checkbox-container">
+                        <input type="checkbox" required>
+                        <span class="checkbox-text">
+                            I allow this website to store my submission so they can respond to my inquiry. *
+                        </span>
+                    </label>
+                    
+    
+                    <button type="submit" class="submit-button">SUBMIT</button>
+                </form>
+            </div>
+    
+            <!-- Contact Information Section -->
+            <div class="contact-info">
+                <h3>Get in touch</h3>
+                <p>📧 <a href="mailto:hohahohah2@gmial.com">hohahohah2@gmial.com</a></p>
+                <h3>Location</h3>
+                <p>📍 Srinagar, UK IN</p>
+                <h3>Hours</h3>
+                <p>Monday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9:00am - 10:00pm</p>
+                <p>Tuesday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9:00am - 10:00pm</p>
+                <p>Wednesday &nbsp; 9:00am - 10:00pm</p>
+                <p>Thursday &nbsp;&nbsp;&nbsp; 9:00am - 10:00pm</p>
+                <p>Friday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9:00am - 10:00pm</p>
+                <p>Saturday &nbsp;&nbsp;&nbsp;&nbsp; 9:00am - 6:00pm</p>
+                <p>Sunday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9:00am - 12:00pm</p>
+            </div>
+        </div>
+</body>
+</html>
+

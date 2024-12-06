@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.hair-treatment, .contact {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.hair-treatment {
+    background-color: #f9f9f9;
+    flex-wrap: wrap;
+}
+
+.hair-treatment .content {
+    max-width: 600px;
+    margin-right: 20px;
+}
+
+.hair-treatment .image img {
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.appointment-button, .contact-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.appointment-button:hover, .contact-button:hover {
+    background-color: #45a049;
+}
+
+.contact {
+    background-color: #2b8e28;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-button {
+    background-color: #fff;
+    color: #2b8e28;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #021f01;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-credit {
+    margin-top: 10px;
+    font-size: 14px;
+}
+

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meeting Request Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .meeting-form {
+      background: #ffffff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      padding: 20px;
+      max-width: 400px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .meeting-form h2 {
+      margin-bottom: 20px;
+      color: #333;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .date-selector {
+      margin-bottom: 20px;
+    }
+
+    .month-navigation {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .month-navigation button {
+      background: none;
+      border: none;
+      font-size: 18px;
+      color: #007BFF;
+      cursor: pointer;
+    }
+
+    .month-navigation button:hover {
+      text-decoration: underline;
+    }
+
+    .calendar {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 10px;
+    }
+
+    .calendar div {
+      text-align: center;
+      padding: 8px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .calendar .selected {
+      background-color: #007BFF;
+      color: #ffffff;
+      font-weight: bold;
+    }
+
+    .time-slots {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .time-slots button {
+      background: #f4f4f9;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .time-slots button:hover {
+      background-color: #007BFF;
+      color: #ffffff;
+      border-color: #007BFF;
+    }
+
+    .timezone {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #666;
+      text-align: center;
+    }
+
+    .contact-form {
+      background: #ffffff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      padding: 20px;
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .contact-form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    .contact-form input[type="checkbox"] {
+      width: auto;
+      margin-right: 5px;
+    }
+
+    .contact-form button {
+      background: #00b33c;
+      color: #ffffff;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .contact-form button:hover {
+      background: #009e2a;
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px 10px;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    footer a {
+      color: #00b33c;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 14px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    footer p {
+      margin: 10px 0 0;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="meeting-form">
+    <h2>Select a Date and Time</h2>
+    <div class="date-selector">
+      <div class="month-navigation">
+        <button onclick="previousMonth()">&lt;</button>
+        <span>December 2024</span>
+        <button onclick="nextMonth()">&gt;</button>
+      </div>
+      <div class="calendar">
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div class="selected">6</div>
+        <div>7</div>
+        <div>8</div>
+      </div>
+    </div>
+    <div class="time-slots">
+      <button>12:30 PM - 1:00 PM</button>
+      <button>1:00 PM - 1:30 PM</button>
+      <button>1:30 PM - 2:00 PM</button>
+      <button>2:00 PM - 2:30 PM</button>
+      <button>2:30 PM - 3:00 PM</button>
+      <button>3:00 PM - 3:30 PM</button>
+      <button>3:30 PM - 4:00 PM</button>
+      <button>4:00 PM - 4:30 PM</button>
+      <button>4:30 PM - 5:00 PM</button>
+    </div>
+    <div class="timezone">
+      <span>&#x1F310; (GMT+05:30) Asia - Calcutta</span>
+    </div>
+  </div>
+
+  <div class="contact-form">
+    <h2>Contact Information</h2>
+    <form action="#" method="post">
+      <label for="name">Name *</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address *</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number *</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label>Which service or services are you interested in?</label>
+      <div>
+        <input type="checkbox" id="service1" name="services[]" value="Service 1">
+        <label for="service1">Service Title 1</label>
+      </div>
+      <div>
+        <input type="checkbox" id="service2" name="services[]" value="Service 2">
+        <label for="service2">Service Title 2</label>
+      </div>
+      <div>
+        <input type="checkbox" id="service3" name="services[]" value="Service 3">
+        <label for="service3">Service Title 3</label>
+      </div>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <footer>
+    <a href="#">Schedule Appointment</a>
+    <a href="#">Complete Intake</a>
+    <p>Web design by <a href="#">B12</a></p>
+  </footer>
+
+  <script>
+    function previousMonth() {
+      alert('Go to the previous month');
+    }
+
+    function nextMonth() {
+      alert('Go to the next month');
+    }
+  </script>
+</body>
+</html>
